@@ -626,11 +626,11 @@ function checkout() {
     }
     
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const message = `مرحباً، أريد طلب المنتجات التالية:\n\n` +
+    const message = `مرحباً، أريد الاستفسار عن المنتجات التالية:\n\n` +
         cart.map(item => `• ${item.name} - الكمية: ${item.quantity} - السعر: ${item.price * item.quantity} جنيه`).join('\n') +
         `\n\nالمجموع الكلي: ${total.toLocaleString()} جنيه`;
     
-    const whatsappUrl = `https://wa.me/966501234567?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/201011347171?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
 
