@@ -187,6 +187,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+z-index: 1;
 }
 
 .hero-image img {
@@ -195,6 +196,7 @@ body {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 .hero-image img:hover {
