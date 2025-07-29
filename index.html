@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arab Store - كل ما تحتاجه لجهازك في مكان واحد</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="assets/Logo.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <h1>Arab Store</h1>
+            <span>متجر عرابي يرحب بكم</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">الرئيسية</a></li>
+            <li><a href="#products" class="nav-link">المنتجات</a></li>
+            <li><a href="#about" class="nav-link">من نحن</a></li>
+            <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+            <li>
+              <a href="#cart" class="nav-link cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>اللاب المناسب للشخص المناسب</h1>
+          <p>أفضل أجهزة اللابتوب والإكسسوارات وقطع الغيار بأسعار تنافسية</p>
+          <button class="cta-button" onclick="scrollToSection('products')">
+            تسوق الآن
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="assets/Logo.png" alt="لابتوب" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2>منتجاتنا</h2>
+
+        <!-- Product Categories -->
+        <div class="category-tabs">
+          <button class="tab-button active" data-category="all">
+            جميع المنتجات
+          </button>
+          <button class="tab-button" data-category="laptops">لابتوبات</button>
+          <button class="tab-button" data-category="accessories">
+            إكسسوارات
+          </button>
+          <button class="tab-button" data-category="parts">قطع غيار</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>من نحن</h2>
+            <h3>Arab Store - متجر عرابي للتقنية</h3>
+            <p>
+              نحن متجر متخصص في بيع أجهزة الكمبيوتر المحمولة والإكسسوارات وقطع
+              الغيار بأعلى جودة وأفضل الأسعار ونسعي لخدمتكم بأفضل شكل ممكن.
+            </p>
+
+            <div class="vision-mission">
+              <div class="vision">
+                <h4><i class="fas fa-eye"></i> رؤيتنا</h4>
+                <p>
+                  أن نكون الوجهة الأولى والأكثر ثقة لكل احتياجات التكنولوجيا
+                  التي قد تفكر بها
+                </p>
+              </div>
+              <div class="mission">
+                <h4><i class="fas fa-bullseye"></i> رسالتنا</h4>
+                <p>
+                  توفير أفضل المنتجات التقنية بجودة عالية وأسعار منافسة مع خدمة
+                  عملاء متميزة.
+                </p>
+              </div>
+            </div>
+
+            <div class="features">
+              <div class="feature">
+                <i class="fas fa-medal"></i>
+                <h4>جودة مضمونة</h4>
+                <p>جميع منتجاتنا أصلية ومضمونة</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-shipping-fast"></i>
+                <h4>توصيل سريع</h4>
+                <p>توصيل لأي مكان بإذن الله</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h4>دعم 24/7</h4>
+                <p>خدمة عملاء متوفرة طوال الوقت</p>
+              </div>
+              <div class="feature">
+                <i class="fas fa-gift"></i>
+                <h4>هدايا ممتازة</h4>
+                <p>ستحقق سعادتك معنا إن شاء الله</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="assets/Reset.png" alt="عن المتجر" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>تواصل معنا على جميع المنصات</h2>
+        <div class="contact-content">
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/profile.php?id=61578177435052&mibextid=ZbWKwL"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>عربة التسوق</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-total">
+          <h3>المجموع: <span id="cart-total">0</span>جنيه</h3>
+          <button class="checkout-btn">إتمام الطلب</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Arab Store</h3>
+            <p>متجر عرابي للتقنية - كل ما تحتاجه لجهازك في مكان واحد</p>
+          </div>
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#products">المنتجات</a></li>
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>المنتجات</h4>
+            <ul>
+              <li><a href="#">لابتوبات</a></li>
+              <li><a href="#">إكسسوارات</a></li>
+              <li><a href="#">قطع غيار</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>خدمة العملاء</h4>
+            <ul>
+              <li><a href="#">01118328190</a></li>
+              <li><a href="#">01155309351</a></li>
+              <li><a href="#">كل التفاصيل الأخري</a></li>
+              <!-- <li><a href="#">الشحن والتوصيل</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arab Store. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
