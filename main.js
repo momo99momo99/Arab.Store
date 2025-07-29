@@ -630,7 +630,7 @@ function checkout() {
         cart.map(item => `• ${item.name} - الكمية: ${item.quantity} - السعر: ${item.price * item.quantity} جنيه`).join('\n') +
         `\n\nالمجموع الكلي: ${total.toLocaleString()} جنيه`;
     
-    const whatsappUrl = `https://wa.me/201011347171?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/201118328190?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
 
